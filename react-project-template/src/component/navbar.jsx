@@ -7,12 +7,12 @@ const Tabs = () => {
 
   return ( <>
     
-    <Navbar style={{ height:'30px'}}variant={'dark'} bg='dark' expand="md">
+    <Navbar style={{ height:'50px'}}variant={'dark'} bg='dark' expand="md">
   <Container>
-    <Navbar.Brand>React-Bootstrap</Navbar.Brand>
+    <Navbar.Brand style={{fontSize:'15px',marginRight:'40px'}}> <li style={{color:'red'}}className="fa fa-infinity"></li> React-Bootstrap</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
+      <Nav style={{fontSize:'12px'}} className="me-auto">
         <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Nav.Link as={Link} to="/App">App</Nav.Link>
         <Nav.Link as={Link} to="/Code">Code</Nav.Link>
