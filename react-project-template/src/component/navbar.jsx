@@ -7,7 +7,7 @@ const Tabs = () => {
 
   return ( <>
     
-    <Navbar variant={'dark'} bg='dark' expand="lg">
+    <Navbar style={{ height:'30px'}}variant={'dark'} bg='dark' expand="md">
   <Container>
     <Navbar.Brand>React-Bootstrap</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />

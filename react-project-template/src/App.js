@@ -5,12 +5,15 @@ import Application from './component/Application'
 import Code from './component/Code'
 import Git from './component/Git'
 import About from './component/About'
-
+import Footer from './component/Footer'
+import './Style.css'
 
 
 function App() {
   return (
-    <Router>
+    <div className="page-container">
+      <div className="content-wrap">
+      <Router>
        <Tabs/>
        <Switch>
          <Route exact path='/'>
@@ -29,8 +32,11 @@ function App() {
            <About/>
          </Route>
        </Switch>
-
+     <Footer/>
     </Router>
+      </div>
+    </div>
+     
      
 
   );
