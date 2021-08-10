@@ -1,8 +1,14 @@
-import {Button} from '@material-ui/core'
+import Navbar from './component/navbar.jsx'
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+
 
 function App() {
   return (
-     <Button/>
+    <Router>
+       <Navbar/>
+    </Router>
+     
+
   );
 }
 
