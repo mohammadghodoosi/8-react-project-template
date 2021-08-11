@@ -5,7 +5,7 @@ const Footer = () => {
   return ( <div >
        <footer className="bg-dark main-footer mt-auto py-3 sticky-footer">
            <div className="container-fluid text-center">
-              <img src={Logo} style={{marginTop:'-60px',marginBottom:'-60px'}} />
+              <img src={Logo} id='footerHeight' />
            </div>
        </footer>
       

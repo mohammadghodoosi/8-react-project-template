@@ -7,12 +7,18 @@ import Git from './component/Git'
 import About from './component/About'
 import Footer from './component/Footer'
 import './Style.css'
+import {Helmet} from 'react-helmet'
 
 
 function App() {
+  
   return (
     <div className="page-container">
       <div className="content-wrap">
+         <Helmet>
+        <title>My Title</title>
+        <meta name="description" content="Helmet application" />
+    </Helmet>
       <Router>
        <Tabs/>
        <Switch>

@@ -21,3 +21,11 @@ white-space: pre-wrap;
 word-break: break-all;
 word-wrap: break-word;
 }
+#footerHeight{
+  margin-top: -60px;
+  margin-bottom: -60px;
+}
+#navBrand{
+  font-size:15px;
+  margin-right:40px
+}

@@ -8,17 +8,24 @@ import infinity from '../img/infinityW.png'
 const Tabs = () => {
 
   return ( <>
-    
-    <Navbar style={{ height:'50px'}} variant={'dark'} bg='dark' expand="md">
-  <Container>
-    <Navbar.Brand 
-    style={{fontSize:'15px',marginRight:'40px'}}> 
-      <img id='navLogo' src={infinity}/>
-    React-Bootstrap
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav style={{fontSize:'12px'}} className="me-auto">
+    <Navbar 
+     style={{ height:'50px'}} 
+     variant={'dark'} 
+     bg='dark' 
+     expand="md">
+   <Container>
+     <Navbar.Brand 
+     id='navBrand'> 
+      <img id='navLogo' 
+      src={infinity}/>
+      React-Bootstrap
+     </Navbar.Brand>
+     <Navbar.Toggle 
+     aria-controls="basic-navbar-nav" />
+     <Navbar.Collapse id="basic-navbar-nav">
+      <Nav 
+      style={{fontSize:'12px'}} 
+      className="me-auto">
         <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Nav.Link as={Link} to="/App">App</Nav.Link>
         <Nav.Link as={Link} to="/Code">Code</Nav.Link>
