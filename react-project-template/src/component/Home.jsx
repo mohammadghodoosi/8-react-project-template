@@ -1,11 +1,12 @@
 import Logo from '../img/dark.svg'
 import LogoGa from '../img/gatsby.svg'
-import LogoRe from '../img/redux.svg'
-
+import LogoRe from '../img/redux.svg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
+import '../Style.css';
+
 
 
 
@@ -15,7 +16,7 @@ const Home = () => {
      <div className="row row-cols-1 row-cols-sm-2">
       {/* room for explanation about the app */}
      <div className="col order-last order-sm-first">
-      <h1 className="display-5 fw-bold lh-1 mb-3">app name:coding project</h1>
+      <h2 className="fw-bold lh-1 mb-3">app name:coding project</h2>
       <h4 className="lead">describe the project</h4>
       <ul className="fa-ul pt-2 checklist">
         <li><span className="fa-li"><FontAwesomeIcon icon={faCheckSquare} /></span>text</li>

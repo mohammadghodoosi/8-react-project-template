@@ -2,14 +2,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom'
 import React from 'react'
 import {Navbar,Nav,Container} from 'react-bootstrap'
+import '../Style.css'
+import infinity from '../img/infinityW.png'
 
 const Tabs = () => {
 
   return ( <>
     
-    <Navbar style={{ height:'50px'}}variant={'dark'} bg='dark' expand="md">
+    <Navbar style={{ height:'50px'}} variant={'dark'} bg='dark' expand="md">
   <Container>
-    <Navbar.Brand style={{fontSize:'15px',marginRight:'40px'}}> <li style={{color:'red'}}className="fa fa-infinity"></li> React-Bootstrap</Navbar.Brand>
+    <Navbar.Brand 
+    style={{fontSize:'15px',marginRight:'40px'}}> 
+      <img id='navLogo' src={infinity}/>
+    React-Bootstrap
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav style={{fontSize:'12px'}} className="me-auto">

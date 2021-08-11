@@ -11,3 +11,13 @@ footer{
 .content-wrap{
   flex:1;
 }
+#navLogo{
+  margin-right:15px;
+  height:30px;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+white-space: pre-wrap;
+word-break: break-all;
+word-wrap: break-word;
+}
