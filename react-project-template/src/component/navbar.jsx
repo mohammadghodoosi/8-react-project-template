@@ -9,7 +9,7 @@ const Tabs = () => {
 
   return ( <>
     <Navbar 
-     style={{ height:'50px'}} 
+     style={{ height:'55px',marginBottom:'20px'}} 
      variant={'dark'} 
      bg='dark' 
      expand="md">
@@ -24,7 +24,7 @@ const Tabs = () => {
      aria-controls="basic-navbar-nav" />
      <Navbar.Collapse id="basic-navbar-nav">
       <Nav 
-      style={{fontSize:'12px'}} 
+       id="navLink"
       className="me-auto">
         <Nav.Link as={Link} to="/">Home</Nav.Link>
         <Nav.Link as={Link} to="/App">App</Nav.Link>

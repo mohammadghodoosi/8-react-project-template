@@ -1,4 +1,4 @@
-import Tabs from './component/Navbar.jsx'
+import Tabs from './component/navbar'
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Home from './component/Home'
 import Application from './component/Application'
