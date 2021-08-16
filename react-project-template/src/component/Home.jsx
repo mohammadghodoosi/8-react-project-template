@@ -4,11 +4,17 @@ import LogoRe from '../img/redux.svg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckSquare } from "@fortawesome/free-solid-svg-icons";
 import '../Style.css';
+import {useHistory} from 'react-router-dom'
 
 
 
 
 const Home = () => {
+  const history=useHistory()
+
+  const clickH=()=>{
+    history.push('/App')
+  }
   return ( <>
    <div className="container">
      <div className="row row-cols-1 row-cols-sm-2">
@@ -21,7 +27,7 @@ const Home = () => {
         <li><span className="fa-li"><FontAwesomeIcon icon={faCheckSquare} /></span>text</li>
         <li><span className="fa-li"><FontAwesomeIcon icon={faCheckSquare} /></span>text</li>
       </ul>
-      <button className="btn btn-outline-dark btn-lg px-4 me-md-2">try it out</button>
+      <button className="btn mt-3 btn-outline-dark btn-lg px-4 me-md-2" onClick={clickH}>try it out...</button>
       <h5 className="fw-bold mt-5">
         <div className="d-flex">
           <div className="row gx-3">
