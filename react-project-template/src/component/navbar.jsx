@@ -9,7 +9,7 @@ const Tabs = () => {
 
   return ( <>
     <Navbar 
-     style={{ height:'55px',marginBottom:'20px'}} 
+     style={{marginBottom:'20px'}} 
      variant={'dark'} 
      bg='dark' 
      expand="md">
@@ -27,10 +27,10 @@ const Tabs = () => {
        id="navLink"
       className="me-auto">
         <Nav.Link as={Link} to="/">Home</Nav.Link>
-        <Nav.Link as={Link} to="/App">App</Nav.Link>
-        <Nav.Link as={Link} to="/Code">Code</Nav.Link>
+        <Nav.Link as={Link} to="/App">the App</Nav.Link>
+        <Nav.Link as={Link} to="/Code">the Code</Nav.Link>
         <Nav.Link as={Link} to="/Git">Git Repo</Nav.Link>
-        <Nav.Link as={Link} to="/About">About</Nav.Link>
+        <Nav.Link as={Link} to="/About">About me</Nav.Link>
 
       </Nav>
     </Navbar.Collapse>
